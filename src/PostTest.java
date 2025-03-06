@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class PostTest {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -45,8 +45,8 @@ public class App {
         
         double hutangAbsolut = hutang < 0 ? -hutang : hutang;
         double pengeluaranPembulatan = (pengeluaranHarian % 1 == 0) ? pengeluaranHarian : (int) pengeluaranHarian + 1;
-        int bonusTakTerduga = 100000 + (int) ((System.currentTimeMillis() % 901000)); 
-        
+        int bonusTakTerduga = 100000 + (int) (Math.random() * 1000001);
+
         double totalUangSetelah = sisaUang30Hari + bonusTakTerduga;
         
         // 6. Menampilkan Rangkuman Keuangan
